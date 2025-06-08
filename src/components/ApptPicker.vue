@@ -1,8 +1,12 @@
 <template>
   <div>
-    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+    <h2>Complete the following to make an appointment.</h2>
+    <b-form @submit="onSubmit" @reset="onReset" v-if="show" class="mt-5">
       <!-- Name -->
-      <b-form-group label="Full Name:" label-for="name-input">
+      <b-form-group label="Full Name:" label-for="name-input" label-cols-sm="4"
+  label-cols-lg="3"
+  content-cols-sm
+  content-cols-lg="7">
         <b-form-input
           id="name-input"
           v-model="form.name"
@@ -13,7 +17,10 @@
       </b-form-group>
 
       <!-- Email -->
-      <b-form-group label="Email Address:" label-for="email-input">
+      <b-form-group label="Email Address:" label-for="email-input" label-cols-sm="4"
+  label-cols-lg="3"
+  content-cols-sm
+  content-cols-lg="7">
         <b-form-input
           id="email-input"
           v-model="form.email"
@@ -24,7 +31,10 @@
       </b-form-group>
 
       <!-- Phone Number -->
-      <b-form-group label="Phone Number:" label-for="phone-input">
+      <b-form-group label="Phone Number:" label-for="phone-input" label-cols-sm="4"
+  label-cols-lg="3"
+  content-cols-sm
+  content-cols-lg="7">
         <b-form-input
           id="phone-input"
           v-model="form.phone"
@@ -35,7 +45,10 @@
       </b-form-group>
 
       <!-- Service -->
-      <b-form-group label="Service:" label-for="service-input">
+      <b-form-group label="Service:" label-for="service-input" label-cols-sm="4"
+  label-cols-lg="3"
+  content-cols-sm
+  content-cols-lg="7">
         <b-form-select
           id="service-input"
           v-model="form.service"
@@ -45,7 +58,10 @@
       </b-form-group>
 
       <!-- Date -->
-      <b-form-group label="Appointment Date:" label-for="date-input">
+      <b-form-group label="Appointment Date:" label-for="date-input" label-cols-sm="4"
+                    label-cols-lg="3"
+                    content-cols-sm
+                    content-cols-lg="7">
         <b-form-input
           id="date-input"
           v-model="form.date"
@@ -55,7 +71,10 @@
       </b-form-group>
 
       <!-- Time -->
-      <b-form-group label="Appointment Time:" label-for="time-input">
+      <b-form-group label="Appointment Time:" label-for="time-input" label-cols-sm="4"
+                    label-cols-lg="3"
+                    content-cols-sm
+                    content-cols-lg="7">
         <b-form-input
           id="time-input"
           v-model="form.time"
@@ -65,7 +84,10 @@
       </b-form-group>
 
       <!-- Extra Notes -->
-      <b-form-group label="Additional Notes:" label-for="notes-input">
+      <b-form-group label="Additional Notes:" label-for="notes-input" label-cols-sm="4"
+                    label-cols-lg="3"
+                    content-cols-sm
+                    content-cols-lg="7">
         <b-form-textarea
           id="notes-input"
           v-model="form.notes"
@@ -75,20 +97,18 @@
         ></b-form-textarea>
       </b-form-group>
 
-      <!-- Submit and Reset Buttons -->
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger" class="ml-2">Reset</b-button>
+      <div class="d-flex justify-content-center">
+        <b-button type="submit" variant="primary" style="width: 20rem">Submit</b-button>
+      </div>
     </b-form>
-
-    <!-- Form Output -->
-    <b-card class="mt-3" header="Form Data Result">
-      <pre class="m-0">{{ form }}</pre>
-    </b-card>
   </div>
 </template>
 
 <script>
+import {BButton} from "bootstrap-vue-next";
+
 export default {
+  components: {BButton},
   data() {
     return {
       form: {
@@ -101,7 +121,7 @@ export default {
         notes: ''
       },
     serviceOptions: [
-        { text: 'Select A Service', value: null, disabled: true },
+        { text: 'Select A Service', value: "", disabled: true },
         'Tire Repair',
         'Inner Tube Repair',
         'Gear Replacement',
@@ -112,7 +132,6 @@ export default {
         'Chain Repair',
         'Full Maintenance'
       ],
-
       show: true
     }
   },
@@ -123,8 +142,8 @@ export default {
         name: 'confirm',
         query: this.form
       })
-      
-      
+
+
     },
     onReset(event) {
       event.preventDefault()
@@ -147,5 +166,8 @@ export default {
 </script>
 
 <style scoped>
-/* Add any scoped CSS styles you want */
+.b-form-group {
+  /* Setting the margin-bottom makes the BFormGroup act more like BS4/BSVN */
+  margin-bottom: 1rem;
+}
 </style>

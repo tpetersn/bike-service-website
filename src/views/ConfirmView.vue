@@ -1,16 +1,17 @@
 <template>
   <b-container class="py-5 text-center">
     <b-icon icon="check-circle-fill" variant="success" font-scale="3"></b-icon>
-    <h2 class="mt-3 text-success">Appointment Confirmed!</h2>
     <p class="lead mt-3">
-      Thanks <strong>{{ name }}</strong> for booking with us!<br />
-      A confirmation has been sent to <strong>{{ email }}</strong>.
+      A Confirmation Email has been sent to <br />
+      <strong>{{ email }}</strong>
     </p>
-    <p>Your appointment has been successfully booked.</p>
+    <p>We look forward to seeing you soon!</p>
+
+    <p>To make another appointment click here </p>
 
     <b-button variant="primary" @click="$router.push('/book')">Book Another</b-button>
 
-    <b-button variant="primary" @click="$router.push('/')">Home Page</b-button>
+    <p>Don’t  hesitate to  contact us today for any further questions.</p>
 
   </b-container>
 </template>
