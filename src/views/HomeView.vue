@@ -1,5 +1,4 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
 import {BButton} from "bootstrap-vue-next";
 import IconCalendar from "@/components/icons/IconCalendar.vue";
 </script>
@@ -39,3 +38,4 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
     </div>
   </main>
 </template>
+g
