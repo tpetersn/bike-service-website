@@ -1,13 +1,12 @@
 <script setup>
-import DatePicker from '../components/DatePicker.vue';
-import Form from '../components/Form.vue'
-import TimePicker from '../components/TimePicker.vue';
+import ApptPicker from '../components/ApptPicker.vue';
+
 
 </script>
 
 <template>
   <main>
-    <Form />
+    <ApptPicker />
   </main>
 </template>
 

@@ -119,8 +119,12 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault()
-      alert('Appointment submitted:\n' + JSON.stringify(this.form, null, 2))
-      console.log("Form submitted:", this.form)
+      this.$router.push({
+        name: 'confirm',
+        query: this.form
+      })
+      
+      
     },
     onReset(event) {
       event.preventDefault()

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BookView from '../views/BookView.vue'
+import ConfirmView from '../views/ConfirmView.vue'
 
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/book',
       name: 'book',
       component: BookView,
+    },
+    {
+      path: '/confirm',
+      name: 'confirm',
+      component: ConfirmView,
     },
     {
       path: '/about',
