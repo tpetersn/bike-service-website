@@ -32,7 +32,7 @@ import FooterBar from "@/components/FooterBar.vue";
 
   <header>
     <div class="header-banner">
-      <BImg src="/images/bike-rider-1.png" alt="Responsive image" class="img-fluid header-pic"/>
+      <BImg src="/bike-service-website/images/bike-rider-1.png" alt="Responsive image" class="img-fluid header-pic"/>
 
     </div>
 

@@ -8,7 +8,7 @@ import {BootstrapVueNextResolver} from 'bootstrap-vue-next'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base : '/',
+  base : '/bike-service-website',
   plugins: [
     vue(),
     vueDevTools(),

@@ -86,7 +86,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <!-- Image Column -->
       <div class="col-md-6 d-flex align-items-center">
         <BImg
-          src="/images/bike-repair-shop-2.png"
+          src="/bike-service-website/images/bike-repair-shop-2.png"
           fluid
           alt="Vertical image"
           class="w-100 rounded pic-1"
@@ -97,7 +97,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <div class="row mb-5">
         <div class="col-md-6 d-flex align-items-center">
           <BImg
-            src="/images/bike-repair-3.png"
+            src="/bike-service-website/images/bike-repair-3.png"
             fluid
             alt="Horizontal image"
             class="w-100 rounded pic-2"
