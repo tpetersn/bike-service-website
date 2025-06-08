@@ -5,7 +5,6 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
 
 <template>
   <main>
-<!--    <TheWelcome />-->
     <div class="container">
       <div class="row mb-1">
         <div class="py-5 my-5 text-center">
@@ -36,7 +35,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
         </div>
       </div>
     <!-- -->
-      
+
       <div class="row mb-4">
       <!-- Text Column -->
         <div class="col-md-6">
@@ -81,7 +80,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
                 </li>
             </ul>
           </div>
-            
+
         </div>
 
       <!-- Image Column -->
@@ -117,7 +116,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
 
       </div>
 
-      
+
       <div class="text-center">
         <h3>
           We Value Communication <br>
@@ -168,7 +167,7 @@ margin-top:110px
 
   .pic-1 {
     height:500px;
-    
+
   }
   .pic-2{
     height: auto;

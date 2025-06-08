@@ -13,7 +13,7 @@ import FooterBar from "@/components/FooterBar.vue";
 </script>
 
 <template>
-  <BNavbar v-b-color-mode="'dark'" :toggleable="true" variant="primary">
+  <BNavbar :toggleable="true" variant="primary">
     <BNavbarBrand href="#">Menu</BNavbarBrand>
     <BNavbarToggle target="nav-offcanvas" />
     <BOffcanvas id="nav-offcanvas" title="Menu" placement="end" is-nav>
@@ -35,15 +35,15 @@ import FooterBar from "@/components/FooterBar.vue";
       <BImg src="/images/bike-rider-1.png" alt="Responsive image" class="img-fluid header-pic"/>
 
     </div>
-    
-    
+
+
   </header>
-  <RouterView />
+  <RouterView class="p-3" />
   <FooterBar></FooterBar>
 </template>
 
 <style lang="css">
-
+/* Global styles go here */
 </style>
 
 <style scoped>
@@ -68,7 +68,7 @@ header {
 @media (min-width: 1024px) {
   .header-pic {
     height: 400px;
-    
+
   }
 
 }
