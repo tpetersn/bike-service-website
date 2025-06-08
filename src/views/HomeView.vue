@@ -1,6 +1,6 @@
 <script setup>
-import {BButton} from "bootstrap-vue-next";
 import IconCalendar from "@/components/icons/IconCalendar.vue";
+import {BImg} from "bootstrap-vue-next";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <div class="row mb-1">
         <div class="py-5 my-5 text-center">
           <div class="mx-auto"><h2>Rated the best bike repair shop in Ottawa</h2></div>
-          <BButton><RouterLink to="/book"><IconCalendar/> <span>Book An Appointment Today!</span></RouterLink></BButton>
+          <BLink class="btn btn-primary" to="/book"><IconCalendar/> <span>Book An Appointment Today!</span></BLink>
         </div>
       </div>
       <div class="row mb-2 text-center">
