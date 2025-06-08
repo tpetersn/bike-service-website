@@ -9,6 +9,7 @@ import {
   BNavItem,
   BOffcanvas
 } from "bootstrap-vue-next";
+import FooterBar from "@/components/FooterBar.vue";
 </script>
 
 <template>
@@ -33,6 +34,7 @@ import {
     <BImg src="https://picsum.photos/1280/400/?image=42" fluid alt="Responsive image" />
   </header>
   <RouterView />
+  <FooterBar></FooterBar>
 </template>
 
 <style lang="css">
