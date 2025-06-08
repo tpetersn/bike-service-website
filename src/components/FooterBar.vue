@@ -5,10 +5,10 @@
       <div class="container p-4">
         <div class="row justify-content-between">
           <section class="col-4">
-            <h2>The Bike Doctor</h2>
-            <div>1320 Somerset St. W</div>
-            <div>613-548-9210</div>
-            <div>service@thebikedoctor.ca</div>
+            <h2>The Bike Doctor <IconBike /></h2>
+            <div><IconMapMarker />  1320 Somerset St. W</div>
+            <div><IconPhone /> 613-548-9210</div>
+            <div><IconMail /> service@thebikedoctor.ca</div>
           </section>
           <section class="col-4 ">
             <h2 class="text-center">Hours</h2>
@@ -26,18 +26,19 @@
 </template>
 
 <style scoped>
-.icon {
-  color: #ffffff;
-}
-
-.icon:hover {
-  color: #000000;
-}
-
 footer {
   position: sticky;
   width: 100%;
 }
+
+footer section svg {
+  fill: white;
+}
+
 </style>
-<script setup lang="ts">
+<script setup>
+import IconBike from "@/components/icons/IconBike.vue";
+import IconMapMarker from "@/components/icons/IconMapMarker.vue";
+import IconPhone from "@/components/icons/IconPhone.vue";
+import IconMail from "@/components/icons/IconMail.vue";
 </script>

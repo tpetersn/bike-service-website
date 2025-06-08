@@ -10,7 +10,7 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <div class="row mb-1">
         <div class="py-5 my-5 text-center">
           <div class="mx-auto"><h2>Rated the best bike repair shop in Ottawa</h2></div>
-          <BButton><IconCalendar/> <span>Book An Appointment Today!</span></BButton>
+          <BButton><RouterLink to="/book"><IconCalendar/> <span>Book An Appointment Today!</span></RouterLink></BButton>
         </div>
       </div>
       <div class="row mb-2 text-center">
