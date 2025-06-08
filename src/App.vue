@@ -19,6 +19,7 @@ import {
       <BNavbarNav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/book">Book</RouterLink>
         <BNavItem href="#">Service &amp; Pricing</BNavItem>
         <BNavItem href="#">Book An Appointment</BNavItem>
         <BNavItem href="#">About Us</BNavItem>
