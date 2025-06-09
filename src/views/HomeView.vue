@@ -6,22 +6,24 @@ import {BImg} from "bootstrap-vue-next";
 <template>
   <main>
     <div class="container">
-      <div class="row mb-1">
+      <div class="row mb-1 ">
         <div class="py-5 my-5 text-center">
-          <div class="mx-auto"><h2>Rated the best bike repair shop in Ottawa</h2></div>
+          <div class="mx-auto grab"><h1>Rated the best bike repair shop in Ottawa</h1></div>
           <BLink class="btn btn-primary" to="/book"><IconCalendar/> <span>Book An Appointment Today!</span></BLink>
         </div>
       </div>
       <div class="row mb-2 text-center">
         <div class="col-md-6 themed-grid-col">
           <div class="feature col">
-            <h3 class="fs-2 text-body-emphasis">Customer Driven</h3>
-            <p>The Bike Doctor prioritizes fuly transparent communication, fair pricing, and friendly, knowledgeable support for cyclists of all levels.</p>
+            <h3 class="customer">Customer Driven</h3>
+            <p>The Bike Doctor prioritizes fuly <br> 
+              transparent communication, fair pricing, <br>
+               and friendly, knowledgeable support for <br> cyclists of all levels.</p>
           </div>
         </div>
         <div class="col-md-6 themed-grid-col">
           <div class="col">
-            <h2>Relentless Work Ethics</h2>
+            <h3>Relentless Work Ethics</h3>
             <p>The shop runs on grit.</p>
           </div>
           <div class="row">
@@ -42,7 +44,8 @@ import {BImg} from "bootstrap-vue-next";
           <h3 class="text-center service">Services we offer</h3>
           <p class="text-center">
             Our services are a fixed rate. <br>
-            The cost for each specific service can be found below.
+            The cost for each specific service can <br> 
+            be found below.
           </p>
           <div class="text-left list">
             <ul>
@@ -117,11 +120,11 @@ import {BImg} from "bootstrap-vue-next";
       </div>
 
 
-      <div class="text-center">
-        <h3>
+      <div class="text-center ">
+        <h3 class="comm">
           We Value Communication <br>
         </h3>
-        <p>
+        <p class="comm-info">
           Clients with bikes in the shop will receive digital service reports with photos, status notifications via app or SMS, and can approve quotes online for services not listed. The shop features a semi-automated workbench system that tracks service orders, uses barcodes to log parts, and syncs with a digital inventory management
         </p>
 
@@ -134,6 +137,20 @@ import {BImg} from "bootstrap-vue-next";
 
 <style scoped>
 
+ h1{
+  padding-top: 0px;
+  margin-top: 0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+h3 {
+  text-decoration: underline;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: medium;
+}
 
 .pic-1{
   width: 100%;
@@ -151,20 +168,33 @@ import {BImg} from "bootstrap-vue-next";
   border: 2px solid white;
 }
 
+
 @media (min-width: 1024px) {
+  
   .service{
-  margin-top:35px;
+  margin-top:55px;
+    text-decoration: underline;
+
 }
 .list{
-  margin-top: 100px;
+  margin-top: 75px;
 }
 .tech{
-margin-top:110px
+margin-top:110px;
+  text-decoration: underline;
+
 }
 .tech-info {
   margin-top:35px
 }
-
+.comm{
+  margin-top:75px;
+  text-decoration: underline;
+}
+.comm-info{
+  margin-top:15px;
+  margin-bottom: 150px;
+}
   .pic-1 {
     height:500px;
 

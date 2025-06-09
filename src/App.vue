@@ -14,18 +14,16 @@ import FooterBar from "@/components/FooterBar.vue";
 
 <template>
   <BNavbar :toggleable="true" variant="primary">
-    <BNavbarBrand href="#">Menu</BNavbarBrand>
+    <h4 class="navbar-brand">The Bike Doctor</h4>
     <BNavbarToggle target="nav-offcanvas" />
     <BOffcanvas id="nav-offcanvas" title="Menu" placement="end" is-nav>
       <BNavbarNav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/book">Book</RouterLink>
-        <BNavItem href="#">Service &amp; Pricing</BNavItem>
-        <BNavItem href="#">Book An Appointment</BNavItem>
-        <BNavItem href="#">About Us</BNavItem>
-        <BNavItem href="#">Contact Us</BNavItem>
-        <BNavItem href="#">Shop Hours</BNavItem>
+        <BNavItem to="/">Home</BNavItem>
+        <BNavItem to="/book">Book An Appointment</BNavItem>
+        <BNavItem href="#services">Service &amp; Pricing</BNavItem>
+        <BNavItem href="/#tech">About Us</BNavItem>
+        <BNavItem href="/#about">Contact Us</BNavItem>
+        <BNavItem href="/#about">Shop Hours</BNavItem>
       </BNavbarNav>
     </BOffcanvas>
   </BNavbar>
@@ -39,7 +37,7 @@ import FooterBar from "@/components/FooterBar.vue";
 
   </header>
   <RouterView class="p-3" />
-  <FooterBar></FooterBar>
+  <FooterBar id="about"></FooterBar>
 </template>
 
 <style lang="css">
@@ -51,19 +49,33 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
+h4 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: thin;
+  font-style: italic;
+  font-size: 22px;
+  padding-left: 10px;
+}
 
 .header-banner {
+  margin-bottom:0px;
+  padding-bottom:0px;
   width: 100%;
   overflow: hidden;
+  
 }
 
 
 .header-pic{
+  margin-bottom:0px;
+  padding-bottom:0px;
   width: 100%;
   height: 225px;
   object-fit: cover;
   display: block;
+  
 }
+
 
 @media (min-width: 1024px) {
   .header-pic {
