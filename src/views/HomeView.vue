@@ -35,7 +35,100 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
             </div>
         </div>
       </div>
+    <!-- -->
+      
+      <div class="row mb-4">
+      <!-- Text Column -->
+        <div class="col-md-6">
+          <h3 class="text-center">Services we offer</h3>
+          <p class="text-center">
+            Our services are a fixed rate. <br>
+            The cost for each specific service can be found below.
+          </p>
+          <div class="text-left">
+            <ul>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Tire Repair
+                  <span class="badge bg-primary rounded-pill"> $20 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Inner Tube Repair
+                  <span class="badge bg-primary rounded-pill"> $18 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Gear Replacement
+                  <span class="badge bg-primary rounded-pill"> $17.50 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Brake Pad Repair
+                  <span class="badge bg-primary rounded-pill"> $12 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Brake Cable Repair
+                  <span class="badge bg-primary rounded-pill"> $18 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Chain Tensioning
+                  <span class="badge bg-primary rounded-pill"> $15 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Chain Repair
+                  <span class="badge bg-primary rounded-pill"> $30 </span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Full Maintenance
+                  <span class="badge bg-primary rounded-pill"> $50 </span>
+                </li>
+            </ul>
+          </div>
+            
+        </div>
+
+      <!-- Image Column -->
+      <div class="col-md-6 d-flex align-items-center">
+        <BImg
+          src="https://picsum.photos/1280/400/?image=42"
+          fluid
+          alt="Vertical image"
+          class="w-100 rounded"
+        />
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-6 d-flex align-items-center">
+          <BImg
+            src="https://picsum.photos/1280/400/?image=42"
+            fluid
+            alt="Horizontal image"
+            class="w-100 rounded"
+          />
+        </div>
+
+        <div class="col-md-6 text-center">
+          <h3>
+            Tool Tech <br>
+          </h3>
+          <p>
+            The Bike Doctor uses advanced tools such as digital torque wrenches, laser-guided wheel alignment, hydraulic brake bleeding stations, and drivetrain alignment sensors to pinpoint problems, allowing for the most accurate repairs.
+          </p>
+
+        </div>
+
+      </div>
+
+      
+      <div class="text-center">
+        <h3>
+          We Value Communication <br>
+        </h3>
+        <p>
+          Clients with bikes in the shop will receive digital service reports with photos, status notifications via app or SMS, and can approve quotes online for services not listed. The shop features a semi-automated workbench system that tracks service orders, uses barcodes to log parts, and syncs with a digital inventory management
+        </p>
+
+      </div>
+
     </div>
   </main>
 </template>
-g
+
