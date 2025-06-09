@@ -40,12 +40,12 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <div class="row mb-4">
       <!-- Text Column -->
         <div class="col-md-6">
-          <h3 class="text-center">Services we offer</h3>
+          <h3 class="text-center service">Services we offer</h3>
           <p class="text-center">
             Our services are a fixed rate. <br>
             The cost for each specific service can be found below.
           </p>
-          <div class="text-left">
+          <div class="text-left list">
             <ul>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                   Tire Repair
@@ -87,10 +87,10 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <!-- Image Column -->
       <div class="col-md-6 d-flex align-items-center">
         <BImg
-          src="https://picsum.photos/1280/400/?image=42"
+          src="/images/bike-repair-shop-2.png"
           fluid
           alt="Vertical image"
-          class="w-100 rounded"
+          class="w-100 rounded pic-1"
         />
         </div>
       </div>
@@ -98,18 +98,18 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
       <div class="row mb-5">
         <div class="col-md-6 d-flex align-items-center">
           <BImg
-            src="https://picsum.photos/1280/400/?image=42"
+            src="/images/bike-repair-3.png"
             fluid
             alt="Horizontal image"
-            class="w-100 rounded"
+            class="w-100 rounded pic-2"
           />
         </div>
 
         <div class="col-md-6 text-center">
-          <h3>
+          <h3 class="tech">
             Tool Tech <br>
           </h3>
-          <p>
+          <p class="tech-info">
             The Bike Doctor uses advanced tools such as digital torque wrenches, laser-guided wheel alignment, hydraulic brake bleeding stations, and drivetrain alignment sensors to pinpoint problems, allowing for the most accurate repairs.
           </p>
 
@@ -132,3 +132,48 @@ import IconCalendar from "@/components/icons/IconCalendar.vue";
   </main>
 </template>
 
+
+<style scoped>
+
+
+.pic-1{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border: 2px solid white;
+
+}
+.pic-2{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border: 2px solid white;
+}
+
+@media (min-width: 1024px) {
+  .service{
+  margin-top:35px;
+}
+.list{
+  margin-top: 100px;
+}
+.tech{
+margin-top:110px
+}
+.tech-info {
+  margin-top:35px
+}
+
+  .pic-1 {
+    height:500px;
+    
+  }
+  .pic-2{
+    height: auto;
+  }
+
+
+}
+</style>

@@ -31,7 +31,12 @@ import FooterBar from "@/components/FooterBar.vue";
   </BNavbar>
 
   <header>
-    <BImg src="https://picsum.photos/1280/400/?image=42" fluid alt="Responsive image" />
+    <div class="header-banner">
+      <BImg src="/images/bike-rider-1.png" alt="Responsive image" class="img-fluid header-pic"/>
+
+    </div>
+    
+    
   </header>
   <RouterView />
   <FooterBar></FooterBar>
@@ -47,9 +52,25 @@ header {
   max-height: 100vh;
 }
 
+.header-banner {
+  width: 100%;
+  overflow: hidden;
+}
 
+
+.header-pic{
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  display: block;
+}
 
 @media (min-width: 1024px) {
+  .header-pic {
+    height: 400px;
+    
+  }
 
 }
+
 </style>
